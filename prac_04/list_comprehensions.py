@@ -40,9 +40,21 @@ print(numbers)
 
 # TODO: list comprehension to create a list of only the numbers that are
 # greater than 9 from the numbers (not strings) you just created
-numbers = [int(almost_number) for almost_number in almost_numbers]
+numbers = [int(almost_number) for almost_number in almost_numbers if int(almost_number) > 9]
 print(numbers)
 
 # TODO: (more advanced) use a list comprehension and the join string method
 # to create a string (not list) of the last names for those full names longer than 11 characters
 # the result should be: 'Harlem, Hendrix, Lovelace'
+remove_fist_name = [names.split(' ')[1] for names in full_names]
+# last_name = [names > int(9) for remove_fist_name in names]
+print(remove_fist_name)
+
+# lasts = []
+# for name in full_names:
+#     name = name.split(' ')
+#     last_name = name[1]
+#     lasts.append(last_name)
+#     # if len(lasts) > 9:
+#     #    print(lasts)
+# print(lasts)
