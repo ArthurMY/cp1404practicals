@@ -49,6 +49,9 @@ print(numbers)
 remove_fist_name = [names.split(' ')[1] for names in full_names]
 # last_name = [names > int(9) for remove_fist_name in names]
 print(remove_fist_name)
+long_names = [name for name in full_names if len(name) > 11]
+last_names = [name.split(' ')[1] for name in long_names]
+print(' '.join(sorted(last_names)))
 
 # lasts = []
 # for name in full_names:
